@@ -41,3 +41,27 @@ String.prototype.up_toPascalCase = function (): string {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join("");
 };
+
+/**
+ * Converts a string to snake_case.
+ * All words are converted to lowercase and separated by underscores.
+ *
+ * @returns {string} The string converted to snake_case format.
+ */
+String.prototype.up_toSnakeCase = function (): string {
+  return this.split(" ")
+    .map((word) => word.toLowerCase())
+    .join("_");
+};
+/**
+ * 
+ * Converts a string to kebab-case.
+ * All words are converted to lowercase and separated by hyphens.
+ *
+ * @returns {string} The string converted to kebab-case format.
+ */
+String.prototype.up_toKebabCase = function (): string {
+  return this.split(" ")
+    .map((word) => word.toLowerCase())
+    .join("-");
+};
