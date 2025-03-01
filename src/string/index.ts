@@ -29,3 +29,15 @@ String.prototype.up_toCamelCase = function (): string {
     )
     .join("");
 };
+
+/**
+ * Converts a string to PascalCase.
+ * Each word in the string will have its first letter capitalized, and the rest of the letters will be in lowercase.
+ *
+ * @returns {string} The string converted to PascalCase format.
+ */
+String.prototype.up_toPascalCase = function (): string {
+  return this.split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join("");
+};

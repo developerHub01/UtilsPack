@@ -18,9 +18,10 @@
 
 2. String Utilities
 
-   up_toCapitalCase(str) – Capitalize the first letter of a string.
-   capitalizeWords(str) – Capitalize the first letter of each word.
-   toCamelCase(str) – Convert a string to camelCase format.
+   ✅ up_toCapitalCase(str) – Capitalize the first letter of a string.
+   ✅ capitalizeWords(str) – Capitalize the first letter of each word.
+   ✅ toCamelCase(str) – Convert a string to camelCase format.
+   ✅ toPascalCase(str) – Convert a string to PascalCase format.
    toSnakeCase(str) – Convert a string to snake_case format.
    toKebabCase(str) – Convert a string to kebab-case format.
    reverseString(str) – Reverse a string.
