@@ -18,7 +18,7 @@
 
 2. String Utilities
 
-   capitalizeFirstLetter(str) – Capitalize the first letter of a string.
+   up_toCapitalCase(str) – Capitalize the first letter of a string.
    capitalizeWords(str) – Capitalize the first letter of each word.
    toCamelCase(str) – Convert a string to camelCase format.
    toSnakeCase(str) – Convert a string to snake_case format.

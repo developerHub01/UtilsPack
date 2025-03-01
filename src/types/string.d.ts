@@ -1,6 +1,6 @@
 declare global {
   interface String {
-    up_toCapitalCase(): string;
+    up_toCapitalCase(full: boolean = false): string;
   }
 }
 
