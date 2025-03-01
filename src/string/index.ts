@@ -13,3 +13,19 @@ String.prototype.up_toCapitalCase = function (full: boolean = false): string {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
 };
+
+/**
+ * Converts a string to camelCase.
+ * The first word will have a lowercase first letter, and all subsequent words will have their first letter capitalized, with the rest of the letters in lowercase.
+ *
+ * @returns {string} The string converted to camelCase format.
+ */
+String.prototype.up_toCamelCase = function (): string {
+  return this.split(" ")
+    .map(
+      (word, index) =>
+        (!index ? word.charAt(0).toLowerCase() : word.charAt(0).toUpperCase()) +
+        word.slice(1).toLowerCase()
+    )
+    .join("");
+};
